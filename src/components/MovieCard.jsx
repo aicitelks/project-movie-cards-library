@@ -4,9 +4,11 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
+    const { subtitle, storyline, rating, imagePath } = this.props;
+
     return(
-      <div>
-        MovieCard
+      <div className="movie-card">
+        card
       </div>
     );
   }
