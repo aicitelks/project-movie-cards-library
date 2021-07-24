@@ -11,15 +11,16 @@ class MovieList extends React.Component {
 
     return (
       <div className="movie-list">
-        { movies.map(({ title, subtitle, storyline, rating, imagePath }) => (
-          <MovieCard key={ title }
-              title={ title }
-              subtitle={ subtitle }
-              storyline={ storyline }
-              rating={ rating }
-            imagePath={ imagePath }
+        {movies.map(({ title, subtitle, storyline, rating, imagePath }) => (
+          <MovieCard 
+            key={title}
+            title={title}
+            subtitle={subtitle}
+            storyline={storyline}
+            rating={rating}
+            imagePath={imagePath}
           />
-        )) }
+        ))}
       </div>
     );
   }
