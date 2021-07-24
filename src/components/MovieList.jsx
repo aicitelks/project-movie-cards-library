@@ -2,8 +2,8 @@
 //
 
 import React from 'react';
-import MovieCard from './MovieCard';
 import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
@@ -11,17 +11,15 @@ class MovieList extends React.Component {
 
     return (
       <div className="movie-list">
-        { movies.map(({ title, subtitle, storyline, rating, imagePath }) => {
-          return (
-            <MovieCard key={ title }
+        { movies.map(({ title, subtitle, storyline, rating, imagePath }) => (
+          <MovieCard key={ title }
               title={ title }
               subtitle={ subtitle }
               storyline={ storyline }
               rating={ rating }
-              imagePath={ imagePath }
-            />
-          );
-        }) }
+            imagePath={ imagePath }
+          />
+        )) }
       </div>
     );
   }
@@ -34,7 +32,7 @@ MovieList.propTypes = {
         title: PropTypes.string.isRequired,
         subtitle: PropTypes.string.isRequired,
         storyline: PropTypes.string.isRequired,
-        rating:PropTypes.number.isRequired,
+        rating: PropTypes.number.isRequired,
         imagePath: PropTypes.string.isRequired,
       },
     ),
