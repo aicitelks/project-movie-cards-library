@@ -1,6 +1,7 @@
 # Boas vindas ao repositório do projeto Movie Cards Library!
 
-🚀
+### Projeto 10 🚀
+**Bloco 11** - Introdução à React
 
 # Habilidades
   - Saber a melhor forma para instalar um gerenciador de pacotes
@@ -43,6 +44,7 @@
 Cada componente representa uma parte específica do site, conforme ilustrado abaixo:
 
 ![image](site-outline.png)
+###### Foto: @Tryber
 
 Todos os componentes devem ser criados dentro da pasta `src/components`. 
 
